@@ -15,7 +15,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "front-end url",
+      "https://frontauchciu.onrender.com",
       "http://localhost:3000",
     ],
   })
@@ -67,7 +67,7 @@ const server = http.createServer(app);
 
 const io = require("socket.io")(server, {
   cors: {
-    origin: ["http://localhost:3000",'front end url'],
+    origin: ["http://localhost:3000",'https://frontauchciu.onrender.com'],
   },
 });
 
